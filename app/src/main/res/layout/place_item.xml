@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_top_title"
+        android:background="@color/item_title"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/place_title"
+            android:text="Place Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/place_type"
+            android:text="BBQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgPlace"
+            android:src="@drawable/place"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp" />
+        <LinearLayout
+            android:background="@color/place_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="20dp"
+                android:text="Description..."
+                android:id="@+id/place_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imgFavorite"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
